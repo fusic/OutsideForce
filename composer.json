@@ -1,9 +1,9 @@
 {
-    "name": "fusic/OutsideForce",
-    "description": "CakePHP OutsideForce",
+    "name": "fusic/outside-force",
+    "description": "CakePHP outside-force",
     "type": "cakephp-plugin",
     "keywords": ["cakephp", "routing"],
-    "homepage": "https://github.com/fusic/OutsideForce",
+    "homepage": "https://github.com/fusic/outside-force",
     "license": "MIT",
     "authors": [
         {
@@ -12,7 +12,7 @@
         }
     ],
     "support": {
-        "source": "https://github.com/fusic/OutsideForce"
+        "source": "https://github.com/fusic/outside-force"
     },
     "require": {
         "cakephp/cakephp": "~3.0"
