@@ -3,7 +3,7 @@ build:
   commands:
     - source /etc/profile.d/enablephp56.sh
     - curl -sS https://getcomposer.org/installer | php
-    - php composer.phar install --prefer-dist --no-interaction --no-progress
+    - php composer.phar install
     - ./vendor/bin/phpunit
 notify:
   slack:
