@@ -1,6 +1,12 @@
 build:
   image: sadapon2008/centos6-remi-php56-pgdg-postgresql94:20151113
   commands:
+    - source /etc/profile.d/enablephp56.sh
     - curl -sS https://getcomposer.org/installer | php
     - php composer.phar install --prefer-dist --no-interaction --no-progress
     - ./vendor/bin/phpunit
+notify:
+  slack:
+    webhook_url: https://hooks.slack.com/services/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
+    channel: cakephp3-project
+    username: drone
