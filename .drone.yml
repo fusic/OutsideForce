@@ -1,5 +1,5 @@
 build:
-  image: sadapon2008/centos6-remi-php56-pgdg-postgresql94
+  image: sadapon2008/centos6-remi-php56-pgdg-postgresql94:20151113
   commands:
     - curl -sS https://getcomposer.org/installer | php
     - php composer.phar install --prefer-dist --no-interaction --no-progress
