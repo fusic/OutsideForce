@@ -1,6 +1,7 @@
 build:
   image: sadapon2008/centos6-remi-php56-pgdg-postgresql94:20151113
   commands:
+    - service postgresql-9.4 start
     - source /etc/profile.d/enablephp56.sh
     - curl -sS https://getcomposer.org/installer | php
     - php composer.phar install
