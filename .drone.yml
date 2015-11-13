@@ -1,0 +1,6 @@
+build:
+  image: php:5.6-cli
+  commands:
+    - curl -sS https://getcomposer.org/installer | php
+    - php composer.phar install --prefer-dist --no-interaction --no-progress
+    - ./vendor/bin/phpunit
